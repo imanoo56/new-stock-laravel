@@ -50,7 +50,10 @@
                 </span>
             </x-slot>
             <x-sidebar.sublink title="{{ __('Users') }}" href="{{ route('users.index') }}" :active="request()->routeIs('users.index')" />
-           
+            @can('customer_access')
+                <x-sidebar.sublink title="{{ __('Customers') }}" href="{{ route('customers.index') }}" :active="request()->routeIs('customers.index')" />
+            @endcan
+            
         </x-sidebar.dropdown>
     @endcan
     @can('access_settings')
