@@ -1,7 +1,7 @@
 <div>
-    @section('title', __('Brands List'))
+    @section('title', __('Infra'))
 
-    <x-theme.breadcrumb :title="__('Brands List')" :parent="route('brands.index')" :parentName="__('Brands')">
+    <x-theme.breadcrumb :title="__('Infra')" :parent="route('brands.index')" :parentName="__('Brands')">
         <x-dropdown align="right" width="48" class="w-auto mr-2">
             <x-slot name="trigger" class="inline-flex">
                 <x-button secondary type="button" class="text-white flex items-center">
@@ -19,7 +19,7 @@
 
         @can('brand_create')
             <x-button primary type="button" wire:click="dispatchTo('brands.create', 'createModal')">
-                {{ __('Create Brand') }}
+                {{ __('Add Infra') }}
             </x-button>
         @endcan
     </x-theme.breadcrumb>
@@ -71,7 +71,7 @@
             </tr>
         </x-slot>
         <x-table.tbody>
-            @forelse($brands as $brand)
+            @forelse($Infra as $Infra)
                 <x-table.tr>
                     <x-table.td>
                         <input type="checkbox" value="{{ $brand->id }}" wire:model.live="selected">
@@ -113,7 +113,7 @@
 
     <div class="p-4">
         <div class="pt-3">
-            {{ $brands->links() }}
+            {{ $Infra->links() }}
         </div>
     </div>
 

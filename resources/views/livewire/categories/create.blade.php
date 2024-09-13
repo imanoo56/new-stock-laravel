@@ -2,7 +2,7 @@
     <!-- Create Modal -->
     <x-modal wire:model="createModal" name="createModal">
         <x-slot name="title">
-            {{ __('Create Category') }}
+            {{ __('Create ECRAN ET PC') }}
         </x-slot>
 
         <x-slot name="content">

@@ -1,6 +1,6 @@
 <div>
     @section('title', __('Produtcs'))
-    <x-theme.breadcrumb :title="__('Products List')" :parent="route('products.index')" :parentName="__('Products List')">
+    <x-theme.breadcrumb :title="__('Imprimantes')" :parent="route('products.index')" :parentName="__('Imprimantes')">
         <x-dropdown align="right" width="48" class="w-auto mr-2">
             <x-slot name="trigger" class="inline-flex">
                 <x-button secondary type="button" class="text-white flex items-center">
@@ -25,7 +25,7 @@
         </x-dropdown>
         @can('product_create')
             <x-button primary type="button" wire:click="dispatchTo('products.create', 'createModal')">
-                {{ __('Create products') }}
+                {{ __('Add Imprimantes') }}
             </x-button>
         @endcan
     </x-theme.breadcrumb>

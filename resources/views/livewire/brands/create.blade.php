@@ -2,7 +2,7 @@
     <!-- Create Modal -->
     <x-modal wire:model="createModal">
         <x-slot name="title">
-            {{ __('Create Brand') }}
+            {{ __('Add Infra') }}
         </x-slot>
 
         <x-slot name="content">

@@ -1,6 +1,6 @@
 <div>
-    @section('title', __('Barcode Generator'))
-    <x-theme.breadcrumb :title="__('Barcode Generator')" :parent="route('products.index')" :parentName="__('Products List')" :childrenName="__('Barcode Generator')" />
+    @section('title', __('TSP'))
+    <x-theme.breadcrumb :title="__('TSP')" :parent="route('products.index')" :parentName="__('Imprimantes')" :childrenName="__('Barcode Generator')" />
 
     <div class="flex flex-row">
         <div class="w-full px-2">

@@ -57,7 +57,7 @@ class CategoryController extends BaseController
                 $categories = Category::get();
             }
 
-            return $this->sendResponse($categories, 'Category List');
+            return $this->sendResponse($categories, 'PC ET ECRAN');
         } catch (Exception $e) {
             return $this->sendError($e->getMessage());
         }

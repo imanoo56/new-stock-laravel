@@ -16,7 +16,7 @@ it('test the category create if working', function () {
         ->assertViewIs('livewire.categories.create');
 });
 
-it('tests the create category validation rules', function () {
+it('tests the create ECRAN ET PC validation rules', function () {
     $this->withoutExceptionHandling();
     $this->loginAsAdmin();
 
@@ -30,7 +30,7 @@ it('tests the create category validation rules', function () {
     ]);
 });
 
-it('tests the create category component validation', function () {
+it('tests the create ECRAN ET PC component validation', function () {
     $this->withoutExceptionHandling();
     $this->loginAsAdmin();
 

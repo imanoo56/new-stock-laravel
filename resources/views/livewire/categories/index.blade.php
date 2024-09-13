@@ -1,14 +1,14 @@
 <div>
     @section('title', __('Categories'))
-    <x-theme.breadcrumb :title="__('Categories List')" :parent="route('product-categories.index')" :parentName="__('Categories List')">
+    <x-theme.breadcrumb :title="__('PC ET ECRAN')" :parent="route('product-categories.index')" :parentName="__('PC ET ECRAN')">
         @can('category_import')
             <x-button primary type="button" wire:click="dispatchTo('categories.import', 'importModal')">
-                {{ __('Import Category') }}
+                {{ __('Import PC ET ECRAN') }}
             </x-button>
         @endcan
         @can('category_create')
             <x-button primary type="button" wire:click="dispatchTo('categories.create', 'createModal')">
-                {{ __('Create Category') }}
+                {{ __('Create ECRAN ET PC') }}
             </x-button>
         @endcan
     </x-theme.breadcrumb>

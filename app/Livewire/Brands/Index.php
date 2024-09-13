@@ -45,9 +45,9 @@ class Index extends Component
             'order_direction' => $this->sortDirection,
         ]);
 
-        $brands = $query->paginate($this->perPage);
+        $Infra = $query->paginate($this->perPage);
 
-        return view('livewire.brands.index', ['brands' => $brands]);
+        return view('livewire.brands.index', ['Infra' => $Infra]);
     }
 
     #[On('importModal')]

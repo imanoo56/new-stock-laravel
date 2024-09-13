@@ -32,7 +32,7 @@ it('tests the brand create component', function () {
     ]);
 });
 
-it('tests the create brand component validation', function () {
+it('tests the Add Infra component validation', function () {
     $this->withoutExceptionHandling();
     $this->loginAsAdmin();
 

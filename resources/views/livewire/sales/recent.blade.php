@@ -240,11 +240,15 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="left"><strong>{{ __('Tax') }}
-                                                            ({{ $sale??->tax_percentage }})</strong></td>
-                                                    <td class="right">
-                                                        {{ format_currency($sale?->tax_amount) }}
-                                                    </td>
+                                                <td class="left">
+    <strong>
+        {{ __('Tax') }} ({{ $sale?->tax_percentage ?? 'N/A' }})
+    </strong>
+</td>
+<td class="right">
+    <!-- Contenu de la cellule droite ici -->
+</td>
+
                                                 </tr>
                                                 <tr>
                                                     <td class="left">
